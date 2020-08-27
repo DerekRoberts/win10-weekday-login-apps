@@ -17,6 +17,14 @@ VBScript to run apps conditional on weekday.  Intended for use with Windows 10 T
 - Verify
  - Run (in right pane of Task Scheduler)
 
+## Troubleshooting
+
+VBScript can be confusing.  If `"` fails try `"""`, a quoted quote.
+
+Run the script manually from cmd.exe.  Look for specific line numbers in the output.
+
+`cscript.exe weekdayLoginApps.vbs`
+
 ## Reference
 
 ### VBScript
