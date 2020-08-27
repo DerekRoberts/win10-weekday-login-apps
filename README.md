@@ -4,14 +4,18 @@ VBScript to run apps conditional on weekday.  Intended for use with Windows 10 T
 
 ## Steps
 
-- Edit weekdayLoginApps.vbs to your liking.  There are sections for weekdays and all days.
-- Copy weekdayLoginApps.vbs somewhere appropriate.
+- Customize weekdayLoginApps.vbs
+  - Sections: weekdays, weekends and any day
+  - Uncomment (`'`) as necessary
+  - Optional: WScript.Quit() reports final app status
+- Copy weekdayLoginApps.vbs somewhere appropriate
   - E.g. cmd: `copy weekdayLoginApps.vbs %LOCALAPPDATA%`
 - Open Task Scheduler and import scheduledTask.xml
-- Make sure to customize the task
+- Customize
   - Triggers: Any (default) or specific user
   - Actions > Edit > Arguments: E.g. `//nologo "%LOCALAPPDATA%\weekdayLoginApps.vbs"`
-- Verify by running the task (Right pane of Task Scheduler)
+- Verify
+ - Run (in right pane of Task Scheduler)
 
 ## Reference
 

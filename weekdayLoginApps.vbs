@@ -7,11 +7,16 @@ Set Shell = CreateObject("WScript.Shell")
 
 ' Run on weekdays
 If DatePart("w", Date, vbMonday) < 6 Then
-    Call Shell.Run("""C:\Users\derek\AppData\Local\Programs\Microsoft VS Code\Code.exe""", 4, False)
-    Call Shell.Run("""C:\Program Files\Docker\Docker\Docker Desktop.exe""", 0, False)
-    Call Shell.Run("""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""", 0, False)
+    Call Shell.Run("%LOCALAPPDATA%\Programs\Microsoft VS Code\Code.exe", 4, False)
+    Call Shell.Run("%PROGRAMFILES%\Docker\Docker\Docker Desktop.exe", 0, False)
+    Call Shell.Run("%PROGRAMFILES%\Microsoft Office\root\Office16\OUTLOOK.EXE", 0, False)
     Call Shell.Run("%LOCALAPPDATA%\Microsoft\Teams\Update.exe --processStart Teams.exe", 0, False)
 End If
 
-' Run unconditionally (final run should use WScript.Quit)
-WScript.Quit(Shell.Run("""C:\Program Files (x86)\Google\Chrome\Application\chrome.exe""", 4, False))
+' Run on weekends
+' If DatePart("w", Date, vbMonday) > 5 Then
+    ' Call Shell.Run("%LOCALAPPDATA%\Programs\Microsoft VS Code\Code.exe", 4, False)
+' End If
+
+' Run unconditionally (.Quit/.Run likes triple quotes!)
+WScript.Quit(Shell.Run("""%PROGRAMFILES(X86)%\Google\Chrome\Application\chrome.exe""", 4, False))
