@@ -41,7 +41,12 @@ Run the script manually from cmd.exe.  Look for specific line numbers in the out
 
 [Windows Environment Variables](https://www.rapidee.com/en/environment-variables)
 
-## Upcoming / Calls for Contribution
+## Upcoming / Call for Contribution
 
-- Batch script to copy files and possible ask for customization
+- Batch script:
+  - Copy VB script somewhere appropriate
+  - Import scheduled task
+  - Customization questions
+  - Add VB script launch to Start Menu
 - Further documentation
+- T.B.D.!
