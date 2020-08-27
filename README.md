@@ -13,11 +13,19 @@ Steps:
   - Actions > Edit > Arguments: E.g. `//nologo "%LOCALAPPDATA%\weekdayLoginApps.vbs"`
 - Verify by running the task (Right pane of Task Scheduler)
 
-Coming Soon:
+Upcoming:
 
 - Batch script to copy files and possible ask for customization
 - Further documentation
 
-Links:
+Reference:
 
-- 
+[WScript.Shell](https://ss64.com/vb/shell.html)
+
+[WScript.Quit](https://ss64.com/vb/quit.html)
+
+[Shell.Run](https://ss64.com/vb/run.html)
+
+[Weekday/vbMonday](https://ss64.com/vb/weekday.html)
+
+[Windows Environment Variables](https://www.rapidee.com/en/environment-variables)

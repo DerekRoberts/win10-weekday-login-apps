@@ -15,18 +15,3 @@ End If
 
 ' Run unconditionally (final run should use WScript.Quit)
 WScript.Quit(Shell.Run("""C:\Program Files (x86)\Google\Chrome\Application\chrome.exe""", 4, False))
-
-' ---
-' Reference:
-
-' WScript.Shell
-'   https://ss64.com/vb/shell.html
-
-' WScript.Quit
-'   https://ss64.com/vb/quit.html
-
-' Shell.Run
-'   https://ss64.com/vb/run.html
-
-' Weekday / vbMonday
-'   https://ss64.com/vb/weekday.html
