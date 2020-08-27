@@ -2,7 +2,7 @@
 
 VBScript to run apps conditional on weekday.  Intended for use with Windows 10 Task Scheduler.
 
-Steps:
+## Steps
 
 - Edit weekdayLoginApps.vbs to your liking.  There are sections for weekdays and all days.
 - Copy weekdayLoginApps.vbs somewhere appropriate.
@@ -13,12 +13,9 @@ Steps:
   - Actions > Edit > Arguments: E.g. `//nologo "%LOCALAPPDATA%\weekdayLoginApps.vbs"`
 - Verify by running the task (Right pane of Task Scheduler)
 
-Upcoming:
+## Reference
 
-- Batch script to copy files and possible ask for customization
-- Further documentation
-
-Reference:
+### VBScript
 
 [WScript.Shell](https://ss64.com/vb/shell.html)
 
@@ -28,4 +25,11 @@ Reference:
 
 [Weekday/vbMonday](https://ss64.com/vb/weekday.html)
 
+### Windows
+
 [Windows Environment Variables](https://www.rapidee.com/en/environment-variables)
+
+## Upcoming / Calls for Contribution
+
+- Batch script to copy files and possible ask for customization
+- Further documentation
