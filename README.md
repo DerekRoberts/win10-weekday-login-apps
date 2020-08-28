@@ -15,7 +15,8 @@ VBScript to run apps conditional on weekday.  Intended for use with Windows 10 T
   - Triggers: Any (default) or specific user
   - Actions > Edit > Arguments: E.g. `//nologo "%LOCALAPPDATA%\weekdayLoginApps.vbs"`
 - Verify
- - Run (in right pane of Task Scheduler)
+  - Run manually (right pane of Task Scheduler)
+  - At login (reboot or log off/on)
 
 ## Troubleshooting
 
